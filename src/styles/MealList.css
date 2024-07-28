@@ -1,0 +1,43 @@
+.meal-list-container {
+  background: linear-gradient(to bottom, #020e0f, #079697);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-list-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-height: 80vh; /* Adjusted max-height to fit within viewport */
+  overflow-y: auto; /* Added scroll for overflow content */
+}
+
+.meal-list-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.meal-list-subtitle {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.meal-list-item {
+  text-align: center;
+}
+
+.meal-list-image {
+  width: 128px; /* Adjusted width */
+  height: 128px; /* Adjusted height */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-list-food {
+  color: #ffffff;
+  margin-top: 10px;
+  font-weight: bold;
+}
