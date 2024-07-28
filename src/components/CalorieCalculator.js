@@ -30,12 +30,9 @@ const CalorieCalculator = ({ setResults }) => {
   return (
     <Container maxWidth="xs" className="calorie-calculator-container">
       <Box mt={5} className="calorie-calculator-box">
-        <Box display="flex" alignItems="center" justifyContent="center" mb={3}>
-          <Typography variant="h4" component="h1" className="calorie-calculator-title" style={{ fontWeight: 'bold' }}>
-            BulkerApp
-          </Typography>
-          <img src="/logo.png" alt="Logo" className="calorie-calculator-logo" />
-        </Box>
+        <Typography variant="h4" component="h1" gutterBottom className="calorie-calculator-title">
+          BulkerApp
+        </Typography>
         <form onSubmit={handleSubmit} className="calorie-calculator-form">
           <TextField
             label="Height (e.g., 6'2)"
@@ -45,6 +42,7 @@ const CalorieCalculator = ({ setResults }) => {
             value={height}
             onChange={(e) => setHeight(e.target.value)}
             className="calorie-calculator-input"
+            autoComplete="off"
           />
           <TextField
             label="Current Weight (lbs)"
@@ -54,6 +52,7 @@ const CalorieCalculator = ({ setResults }) => {
             value={currentWeight}
             onChange={(e) => setCurrentWeight(e.target.value)}
             className="calorie-calculator-input"
+            autoComplete="off"
           />
           <TextField
             label="Goal Weight (lbs)"
@@ -63,6 +62,7 @@ const CalorieCalculator = ({ setResults }) => {
             value={goalWeight}
             onChange={(e) => setGoalWeight(e.target.value)}
             className="calorie-calculator-input"
+            autoComplete="off"
           />
           <TextField
             label="Time Period (weeks)"
@@ -72,6 +72,7 @@ const CalorieCalculator = ({ setResults }) => {
             value={timePeriod}
             onChange={(e) => setTimePeriod(e.target.value)}
             className="calorie-calculator-input"
+            autoComplete="off"
           />
           <Box mt={3}>
             <Button variant="contained" color="primary" type="submit" fullWidth className="calorie-calculator-button">
